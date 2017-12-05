@@ -1,0 +1,118 @@
+body {
+    /*background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);*/
+    background-color: #e6e6e6;
+}
+
+#homepage {
+    float: left;
+    margin-left: 350px;
+    width: 300px;
+    height: 490px;
+}
+
+#logo {
+    width: 175px;
+}
+
+#wrapper {
+    background-color: #F2F4F4;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 700px;
+    width: 285px;
+    height: 450px;
+    border: 0px solid #D5DBDB;
+    padding: 20px;
+}
+
+.welcome-text p1 {
+    margin: 1;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: 600;
+    color: #787878;
+}
+
+input {
+    border: 0px;
+    width: 75%;
+    padding: 10px;
+    margin: 1px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=email]:focus, input[type=text]:focus, input[type=password]:focus {
+    border: 1px solid #b4b4b4;
+}
+
+.submit {
+  font-family: Verdana;
+  font-size: 12px;
+  border-radius: 6px;
+  background-color: DodgerBlue;
+  color: white;
+  padding: 5px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submit:link, .submit:visited {
+    font-family: Verdana;
+    font-size: 12px;
+    border-radius: 6px;
+    background-color: DodgerBlue;
+    color: white;
+    padding: 5px 80px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.submit:hover, .submit:active {
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: blue;
+}
+
+p2 {
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+.login {
+    font-family: Verdana;
+    font-size: 15px;
+    color: DodgerBlue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login:link, .login:visited {
+    color: DodgerBlue;
+    text-decoration: none;
+}
+
+.login:hover, .login:active {
+    color: blue;
+    text-decoration: none;
+}
+
+.about {
+    font-family: Verdana;
+    font-size: 12px;
+    color:DodgerBlue;
+    text-decoration: none;
+    margin-left: 1200;
+    cursor: pointer;
+}
+
+.about:link, .about:visited {
+    color: DodgerBlue;
+    text-decoration: none;
+}
+
+.about:hover, .about:active {
+    color: blue;
+    text-decoration: none;
+}

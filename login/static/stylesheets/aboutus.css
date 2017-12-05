@@ -1,0 +1,17 @@
+body {
+    /*background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);*/
+    background-color: #e6e6e6;
+}
+
+#logo {
+    width: 130px;
+}
+
+#wrapper {
+    background-color: #F2F4F4;
+    text-align: left;
+    width: 1310px;
+    height: 30px;
+    border: 0px solid #D5DBDB;
+    padding: 20px;
+}
