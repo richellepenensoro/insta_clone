@@ -16,3 +16,11 @@ class LoginView(TemplateView):
 class AboutUsView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'login/aboutus.html', context=None)
+
+class FeedView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, 'login/feed.html', context=None)
+
+class ProfileView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, 'login/profile.html', context=None)

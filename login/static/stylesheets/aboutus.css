@@ -3,15 +3,40 @@ body {
     background-color: #e6e6e6;
 }
 
+#wrapper {
+    background-color: #F2F4F4;
+    width: 1310px;
+    height: 30px;
+    border: 0px solid #D5DBDB;
+    padding: 20px;
+}
+
 #logo {
     width: 130px;
 }
 
-#wrapper {
+.image{
+    margin-left: 150px;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image:link, .image:visited {
+    text-decoration: none;
+}
+
+.image:hover, .image:active {
+    text-decoration: none;
+}
+
+#wrapper2 {
     background-color: #F2F4F4;
     text-align: left;
-    width: 1310px;
-    height: 30px;
+    margin-top: 30px;
+    margin-left: 275px;
+    width: 750px;
+    height: 500px;
     border: 0px solid #D5DBDB;
     padding: 20px;
 }
