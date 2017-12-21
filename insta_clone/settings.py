@@ -97,14 +97,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'insta_db',
         'USER': 'postgres',
-        'PASSWORD': 'jemart',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT':'',
     }
 }
-
-
-
 
 
 # Password validation
