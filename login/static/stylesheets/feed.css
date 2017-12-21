@@ -1,0 +1,69 @@
+body {
+    /*background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);*/
+    background-color: #e6e6e6;
+}
+
+#wrapper {
+    background-color: #F2F4F4;
+    width: 1310px;
+    height: 30px;
+    border: 0px solid #D5DBDB;
+    padding: 20px;
+}
+
+.submit {
+  float: right;
+  font-family: Verdana;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submit:link, .submit:visited {
+    text-decoration: none;
+}
+
+.submit:hover, .submit:active {
+    text-decoration: underline;
+}
+
+#logo {
+    width: 130px;
+}
+
+.image{
+    margin-left: 100px;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image:link, .image:visited {
+    text-decoration: none;
+}
+
+.image:hover, .image:active {
+    text-decoration: none;
+}
+
+#profid {
+    width: 40px;
+}
+
+.image2{
+    margin-right: 75px;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image2:link, .image2:visited {
+    text-decoration: none;
+}
+
+.image2:hover, .image2:active {
+    text-decoration: none;
+}

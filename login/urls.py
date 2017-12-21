@@ -3,4 +3,9 @@ from login import views
 
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view()),
+    url(r'^index', views.HomePageView.as_view()),
+    url(r'^loginpage', views.LoginView.as_view()),
+    url(r'^aboutus', views.AboutUsView.as_view()),
+    url(r'^feed', views.FeedView.as_view()),
+    url(r'^profile', views.ProfileView.as_view()),
 ]

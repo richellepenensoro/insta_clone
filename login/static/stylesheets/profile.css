@@ -1,0 +1,123 @@
+body {
+    /*background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);*/
+    background-color: #e6e6e6;
+}
+
+#wrapper {
+    background-color: #F2F4F4;
+    width: 1300px;
+    height: 30px;
+    border: 0px solid #D5DBDB;
+    padding: 20px;
+}
+
+.submit {
+  float: right;
+  font-family: Verdana;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submit:link, .submit:visited {
+    text-decoration: none;
+}
+
+.submit:hover, .submit:active {
+    text-decoration: underline;
+}
+
+#logo {
+    width: 130px;
+}
+
+.image{
+    margin-left: 150px;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image:link, .image:visited {
+    text-decoration: none;
+}
+
+.image:hover, .image:active {
+    text-decoration: none;
+}
+
+#profid {
+    width: 40px;
+}
+
+.image2{
+    margin-right: 100px;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image2:link, .image2:visited {
+    text-decoration: none;
+}
+
+.image2:hover, .image2:active {
+    text-decoration: none;
+}
+
+#wrapper2 {
+    background-color: #F2F4F4;
+    margin-top: 15px;
+    width: 1300px;
+    border: 0px solid #D5DBDB;
+    padding: 20px;
+}
+
+#profpic {
+    width: 175px;
+    height: 175px;
+    margin-left: 200px;
+}
+
+.edit {
+  float: right;
+  margin-right: 700px;
+  font-family: Verdana;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.edit:link, .edit:visited {
+    text-decoration: none;
+}
+
+.edit:hover, .edit:active {
+    text-decoration: none;
+}
+
+.edit2 {
+  float: left;
+  /* margin-right: 700px; */
+  font-family: Verdana;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.edit2:link, .edit2:visited {
+    text-decoration: none;
+}
+
+.edit2:hover, .edit2:active {
+    text-decoration: none;
+}

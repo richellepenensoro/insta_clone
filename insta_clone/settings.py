@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login'
+    'login',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +68,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'insta_clone.wsgi.application'
 
 
@@ -80,7 +81,7 @@ DATABASES = { 'default': {
                         'USER': 'cmsc127user',
                         'PASSWORD': 'cmsc127password',
                         'HOST': 'localhost',
-                        'PORT': ''
+                        'PORT': '5432'
 } }
 
 

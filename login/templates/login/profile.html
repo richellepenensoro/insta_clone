@@ -1,0 +1,42 @@
+{% load static %}
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{%static 'stylesheets/profile.css' %}">
+    <title> Instagram Clone </title>
+    <link rel="icon" href={%static "images/insta_icon.png" %}>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="header">
+        <a class="submit" href="loginpage.html"> <b> Log out </b> </a>
+        <a class="image" href="feed.html"> <img id = "logo" src={%static "images/instawpic.png" %}> </a>
+        <a class="image2" href="profile.html"> <img id = "profid" src={%static "images/profilelink.png" %}> </a>
+        <!-- <input type="text" placeholder="Search"> -->
+      </div>
+    </div>
+    <!-- </br> -->
+    <div id="wrapper2">
+      <div class="profilepage">
+      </br>
+        <a class="image3" href="feed.html"> <img id = "profpic" src={%static "images/profileicon.png" %}> </a>
+        <ul id="menu">
+          <li> <a class="edit" href="feed.html"> <b> | Edit Profile | </b> </a> </li>
+          <!-- <a class="edit2" href="feed.html"> <b> | Followers | </b> </a> -->
+          <!-- <a class="edit" href="feed.html"> <b> | Edit Profile | </b> </a> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>
+
+<ul id="menu">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>PHP</li>
+</ul>
