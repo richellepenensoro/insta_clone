@@ -16,6 +16,7 @@ urlpatterns = [
     # # url(r'^follow/(\d+)$',views.follow, name='follow'),
     url(r'^$', views.index, name='index'),
     url(r'^$', views.homepage, name='home'),
+    url(r'^accounts/aboutus.html', views.about, name='about'),
     url(r'^profiles/(?P<username>[-_\w.]+)$', views.profile, name='profiles'),
     url(r'^profiles/post/$', views.posts, name='uploadpost'),
     url(r'^profiles/edit/(?P<username>[-_\w.]+)$',

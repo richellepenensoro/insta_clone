@@ -1,0 +1,45 @@
+{% load static %}
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{%static 'stylesheets/aboutus.css' %}">
+    <title> Instagram Clone </title>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div class="header">
+        <a class="image" href="/accounts/register"> <img id = "logo" src={%static "images/instawpic.png" %}> </a>
+      </div>
+    </div>
+    <div id="wrapper2">
+      <div class="about">
+        <form action="/accounts/about/" method="post">
+        </br>
+        <h1> About Us </h1>
+        </br>
+        <h2> The Team </h2>
+        <h3> Richelle Penensoro, Chrizvique Villarin, Justin Yong (CEO, founder) </h3>
+        <p> <b> Richelle Penensoro, Chrizvique Villarin, and Justin Yong </b> are the CEO's and founder of Instagram Clone, </br>
+          a community of more than 800 million who capture and share the world's moments on the service. They focus </br>
+          on building products that bring out the creativity in all of us and are responsible for the company's overall </br>
+          vision and strategy as well as day-to-day operations.
+          </br> </br>
+          Since the beginning, Richelle, Chrizvique, and Justin have focused on simplicity and inspiring creativity through </br>
+          solving problems with thoughtful product design. As a result, Instagram Clone has become the home for visual </br>
+          storytelling for everyone from celebrities, newsrooms and brands, to teens, musicians and anyone with a creative </br>
+          passion.
+          <br> </br>
+          Prior to founding Instagram Clone, Richelle, Chrizvique, and Justin worked at Meebo as user experience designers </br>
+          and front-end engineers, were part of the startup Odeo which later became Twitter, and spent two years at Google </br>
+          working on products like Gmail and Google Reader. They graduated from Stanford University with a Bachelor of </br>
+          Science in Management Science & Engineering and serve on the boards of Walmart and KCRW. </p>
+      </div>
+    </div>
+  </form>
+  </body>
+
+</html>

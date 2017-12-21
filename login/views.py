@@ -17,6 +17,9 @@ from vote.managers import VotableManager
 votes = VotableManager()
 
 
+def about(request):
+    return render(request, 'registration/aboutus.html')
+
 @login_required(login_url='/accounts/register/')
 def index(request):
     current_user = request.user
