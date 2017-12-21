@@ -20,6 +20,9 @@
       </div>
       </br>
       <div class="signup-part">
+        <form action="/accounts/register/" method="post">
+
+
         <input type="email" placeholder="Email" class="input-1"/>
         <div class="overlap-text">
           <input type="text" placeholder="Full Name" class="input-2"/>
@@ -32,6 +35,8 @@
         </div>
         </br>
         <a class="submit" href="feed.html"> <b> Sign Up </b> </a>
+        <input type="hidden" name="next" value="{{next}}">
+        </form>
       </div>
     </br> </br>
 
