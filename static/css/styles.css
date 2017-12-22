@@ -21,7 +21,7 @@ body {
   z-index: 1;
   -webkit-transition: height .2s ease-in-out;
   transition: height .2s ease-in-out;
-  height: 77px;
+  height: 71px;
 }
 
 #logo {
@@ -60,13 +60,13 @@ div.help-block {
 
 #editprofiles {
   background-color: #fff;
-  margin-left: 267px;
-  margin-right: 134px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding-top: 24px;
 }
 
 #image {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 

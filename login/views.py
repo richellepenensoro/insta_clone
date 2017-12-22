@@ -13,7 +13,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.core.urlresolvers import reverse
 from vote.managers import VotableManager
 
-#votes
 votes = VotableManager()
 
 
