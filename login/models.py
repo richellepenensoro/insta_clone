@@ -55,7 +55,7 @@ class Posts(VoteModel,models.Model):
     image = models.ImageField(upload_to = 'photos/',blank=True)
     post_date = models.DateTimeField(auto_now_add = True)
     description = models.TextField(max_length=500, blank=True)
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     location = models.CharField(max_length=30, blank=True)
     slug = models.SlugField(max_length=10,unique=True, default=generate_id)
     upvote_count = models.PositiveIntegerField(default=0)

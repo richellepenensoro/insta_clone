@@ -8,27 +8,35 @@
         <div class="col-md-3"></div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-1"></div>
-    {% for post_item in post %}
-    <div class="col-md-6" id="image">
-      <div class="well well-sm">
-        <h3>{{post_item.user.username}}</h3>
-        <p>{{post_item.location}}</p>
-        <img src="{{post_item.image.url}}" class="img-responsive" alt="Image">
-        <div class="container" id="like">
-          <div class="input-group">
-            <h3><a href="{% url 'upvote_post' post_item.id %}">
-              <span class="glyphicon glyphicon-thumbs-up" id="comment"></span></a> {{post_item.upvote_count}}
+  </div><br>
 
-            <a href="{% url 'comment' post_item.id%}">
-              <i class="fa fa-comment-o" style="font-size:24px"></i></a></h3>
-            <h4>{{post_item.description}}</h4>
+    
+    {% for post_item in post %}
+    <div class="row">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="image">
+        <div class="well well-sm">
+          <h3>{{post_item.user.username}}</h3>
+          <p>{{post_item.location}}</p>
+          <img src="{{post_item.image.url}}" class="img-responsive" alt="Image">
+          <div class="container" id="like">
+            <div class="input-group">
+              <h3><a href="{% url 'upvote_post' post_item.id %}">
+                <span class="glyphicon glyphicon-thumbs-up" id="comment"></span></a> {{post_item.upvote_count}}
+
+              <a href="{% url 'comment' post_item.id%}">
+                <i class="fa fa-comment-o" style="font-size:24px"></i></a></h3>
+              <h4>{{post_item.description}}</h4>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    {% endfor %}
-    <div class="col-md-2"></div> {% endblock %}
+    </div>
+    
+      {% endfor %}
+      <div class="col-md-2"></div> {% endblock %}
+    </div>
   </div>
+

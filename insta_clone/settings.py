@@ -17,18 +17,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
+# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = 'j#177&=)cg=zota0^%&%#y@cj2p4i1hoh_+)!u*_hc51zs-@b5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY =config('SECRET_KEY')
-#
 # # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG =config('DEBUG',default=False,cast=bool)
 
@@ -40,8 +38,6 @@ LOGIN_REDIRECT_URL = ('/')
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -69,8 +65,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'insta_clone.urls'
 
 TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    {   'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -97,7 +92,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'insta_db',
         'USER': 'postgres',
-        'PASSWORD': 'jemart',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT':'',
     }
@@ -106,8 +101,6 @@ DATABASES = {
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-
-
 
 
 # Password validation
@@ -152,9 +145,11 @@ STATICFILES_DIRS = [
 
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-#
-# # AUTH_USER_MODEL = 'core.User'
-#
+
+
+# AUTH_USER_MODEL = 'core.User'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
