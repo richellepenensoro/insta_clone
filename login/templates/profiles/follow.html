@@ -1,0 +1,12 @@
+{% extends 'profiles/base.html' %}{% load bootstrap3 %} {% load static %} {% block content %} <br>
+    <div class="container" id="follow">
+      <div class="row">
+        <div class="col-md-4">
+    </div>
+    {% for user_profile in all_user_profiles %}
+        <button data-url="{% url "example_app.views.follow_user" user_profile_id=user_profile.id %}"
+                class="follow-button" type="button">
+                Follow
+              </button>
+    {% endfor %}
+</body>

@@ -9,7 +9,8 @@
     <div class="col-md-3"><br>
       <ul style="list-style-type:none">
         <h3><li><a href="{% url 'editprofile' user.username %}">Edit Profile</a></li> <br>
-        <li><a href="{% url 'uploadpost'%}">Upload Posts</a></li><br></h3>
+        <li><a href="{% url 'uploadpost'%}">Upload Posts</a></li><br>
+      <li><a href="{% url 'follow' %}">Follow</a></li></h3>
       </ul>
     </div>
     <div class="col-md-4"><br>
@@ -37,7 +38,7 @@
             <a href="{% url 'downvote_post' post_item.id %}">
 
             <a href="{% url 'comment' post_item.id%}">
-              <i class="fa fa-comment-o" style="font-size:24px"></i></a> 
+              <i class="fa fa-comment-o" style="font-size:24px"></i></a>
             </a>
           </div>
         </div>

@@ -66,22 +66,4 @@ body {
 
 .image2:hover, .image2:active {
     text-decoration: none;
-}
-/*#follow_button {
-    width: 30px;
-}
-
-.image3{
-    margin-right: 40px;
-    float: none;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.image:link, .image:visited {
-    text-decoration: none;
-}
-
-.image:hover, .image:active {
-    text-decoration: none;
-}*/
+  }

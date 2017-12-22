@@ -133,22 +133,22 @@ def downvote_posts(request, pk):
 
 # follow
 @login_required (login_url='/accounts/register/')
-#def follow(request,pk):
-#    current_user = request.user
-#    follow_profile = Profile.objects.get(pk)
-#    following = Follow(user=current_user, profile=follow_profile)
-#    following.save()
-#    return redirect('follow')
-def follow_user(request, pk):
-    profile_to_follow = get_object_or_404(User, pk)
-    user_profile = request.user.userprofile
-    data = {}
-    if profile_to_follow.follows.filter(id=user_profile.id).exists():
-        data['message'] = "You are already following this user."
-    else:
-        profile_to_follow.follows.add(user_profile)
-        data['message'] = "You are now following {}".format(profile_to_follow)
-    return JsonResponse(data, safe=False)
+def follow_user(request,pk):
+    current_user = request.user
+    follow_profile = Profile.objects.get(pk)
+    following = Follow(user=current_user, profile=follow_profile)
+    following.save()
+    return redirect('follow')
+#def follow_user(request, pk):
+#    profile_to_follow = get_object_or_404(User, pk)
+#    user_profile = request.user.userprofile
+#    data = {}
+#    if profile_to_follow.follows.filter(id=user_profile.id).exists():
+#        data['message'] = "You are already following this user.
+#    else:
+#        profile_to_follow.follows.add(user_profile)
+#        data['message'] = "You are now following {}".format(profile_to_follow)
+#    return JsonResponse(data, safe=False)
 
 
 # comment section

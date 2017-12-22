@@ -26,7 +26,8 @@ urlpatterns = [
     url(r'^profiles/upvote/(\d+)$', views.upvote_posts, name="upvote_post"),
     url(r'^profiles/downvote/(\d+)$', views.downvote_posts, name="downvote_post"),
     url(r'^profiles/comment/(\d+)$', views.comment, name="comment"),
-    url(r'^follow/(\d+)$', views.follow_user, name='follow'),
+    url(r'^profiles/follow/?P<username>[-_\w.]$', views.follow_user, name='follow'),
+    #url(r'^follow/(?<user_profile_id>[\d]+)/$', views.follow_user, name='follow')
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
